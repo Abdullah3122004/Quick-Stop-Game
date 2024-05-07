@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image">
+    <h1>Quick Stop</h1> 
+    <h1>Rules</h1>
+    <ul>
+        <li>You have to click  before 999</li>
+        <li>you got 20 tries.If your number matches 5 times you win</li>
+        <li>If it doesnt matches 5 times then you lose.</li>
+    </ul>
+    <h1>GOOD LUCK!!</h1>
+    <h1 id="number">00</h1>
+    <div>
+        <input maxlength="3" placeholder="Add Your number" id="user_input" />
+    </div>
+    <h4 id="result">-</h4>
+    <div class="button">
+       <button id="start_btn" onclick="start()">start</button>
+       <button onclick="stop()">stop</button>
+    </div>
+
+       <div class="msg" id="msg">-</div>
+ 
+       <div class="container">
+        <div class="info_box"> <b>Total :</b> <span id="total">20</span> </div>
+        <div class="info_box"> <b>Win :</b><span id="win">0</span>   </div>
+        <div class="info_box"> <b>Loss :</b> <span id="loss">0</span>  </div>
+    </div>
+    </div>
+    
+</body>
+   <script src="app.js"></script>
+</html>
